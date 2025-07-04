@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: larger;
+        }
+
+        .overline{
+            text-decoration: overline;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .lineThrough{
+            text-decoration: line-through;
+        }
+        .overLineUnderLine{
+            text-decoration:overline underline;
+        }
+        #p1{
+            text-align: left;
+        }
+        #p4{
+            text-align: justify;
+        }
+        #p3{
+            text-align: center;
+        }
+        #p2{
+            text-align: right;
+        }
+        .p1{
+            text-transform: capitalize;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px 3px red;
+        }
+        .p2{
+            text-transform: uppercase;
+            line-height: 255px;
+        }
+        .p3{
+            text-transform: lowercase;
+        }
+        .p4{
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="overline">I am a Text</div>
+    <div class="underline">I am a Text</div>
+
+    <div class="lineThrough">I am a Text price :$ 500</div>
+
+    <div class="overLineUnderLine">I am a Text</div>
+
+<p id="p1">text-align: left</p>
+    <p id="p2">text-align: right</p>
+    <p id="p3">text-align: end</p>
+    <p id="p4">text-align: justify</p>
+
+    <div >
+        Text transform
+        <div class="p1">I am Text transform </div>
+        <div class="p2">I am Text transform </div>
+        <div class="p3">I am Text transform </div>
+        <div class="p4">I am Text transform </div>
+    </div>
+
+</body>
+</html>
