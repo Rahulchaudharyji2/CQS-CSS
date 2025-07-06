@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Food App</title>
     <style>
         .card{
             margin :15px;
@@ -13,6 +13,22 @@
             color:aliceblue;
             
         }
+        .carousel-container {
+  width: 85%;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px; /* adjust height as needed */
+}
+
+
+
+
     </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -34,29 +50,38 @@
   </div>
 </nav>
 <!-- Carousel -->
- <div style="width:85%; margin-left: 8%;">
- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="  margin:20px; border: 2px solid red; border-radius: 5px; max-height:0.25fr">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://www.foodiv.com/wp-content/uploads/2023/10/Title-change-Top-Online-Food-Delivery-Apps-1.jpg" class="d-block w-100" alt="...">
+ <div class="carousel-container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-item">
-      <img src="https://mobisoftinfotech.com/resources/wp-content/uploads/2019/04/list-food-delivery-apps-india.png" class="d-block w-100" alt="...">
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.foodiv.com/wp-content/uploads/2023/10/Title-change-Top-Online-Food-Delivery-Apps-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://mobisoftinfotech.com/resources/wp-content/uploads/2019/04/list-food-delivery-apps-india.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMNKTkjQ3LWUWorA9wL-VQ3rPGl78gHerBEcoG3xNY9yC-q1B_jwsaBufVhizu6ZaMwk&usqp=CAU" class="d-block w-100" alt="...">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMNKTkjQ3LWUWorA9wL-VQ3rPGl78gHerBEcoG3xNY9yC-q1B_jwsaBufVhizu6ZaMwk&usqp=CAU" class="d-block w-100" alt="...">
-    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon custom-control" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon custom-control" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-</div>
+
 <!--Card-->
 <H2 style="text-align: center;">Our Products</H2>
 <div style="display: flex; flex-wrap: wrap; margin-left: 80px;">
